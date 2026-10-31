@@ -1,0 +1,17 @@
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Ask anything about Stackat. This is public: leave out private repository names, file contents and secrets.
+        Many answers are already in the [documentation](https://docs.stackat.dev).
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question
+    validations:
+      required: true
+  - type: textarea
+    id: setup
+    attributes:
+      label: Your setup (optional)
+      description: "How your tools are installed (Argo CD, Flux, helmfile, Terraform…), and anything you have tried."

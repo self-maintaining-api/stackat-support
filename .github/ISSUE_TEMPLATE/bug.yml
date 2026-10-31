@@ -1,0 +1,47 @@
+name: Bug
+description: Something in Stackat is broken (dashboard, scans, issues, pull requests, Slack, Jira link).
+title: "[Bug] "
+labels: [bug, triage]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This repository is public: leave out private repository names, file contents and secrets. If we need them, we ask by email.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Where
+      options:
+        - Dashboard (app.stackat.dev)
+        - Scans (a repository not scanned, a tool not found)
+        - Issues Stackat writes
+        - Pull requests Stackat opens
+        - "/stackpaw commands"
+        - Slack
+        - Jira link
+        - Installing or the free trial
+        - Something else
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: And what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: How to see it
+      description: The steps, the page, or a link to the Stackat issue or pull request if it is in a public repository.
+  - type: input
+    id: org
+    attributes:
+      label: GitHub organisation (optional)
+      description: Only if you are fine with it being public; otherwise say "by email".
+  - type: input
+    id: when
+    attributes:
+      label: When
+      description: Roughly when it happened (date, time, time zone), so we can find it in our logs.

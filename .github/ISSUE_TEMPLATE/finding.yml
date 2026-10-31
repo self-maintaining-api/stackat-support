@@ -1,0 +1,48 @@
+name: Wrong or missed finding
+description: A Stackat issue was wrong, or missed a change that mattered when you upgraded.
+title: "[Finding] "
+labels: [finding, triage]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        These reports make the matching better for everyone. This repository is public: quote only what you are fine with being public.
+        On the Stackat issue itself you can also reply `/stackpaw wrong …` or `/stackpaw missed …`; that stays in your repository.
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What went wrong
+      options:
+        - It missed a change that broke or affected our upgrade
+        - It flagged a change that does not affect us
+        - The verdict or risk was wrong
+        - The file or line it pointed at was wrong
+        - The pull request was wrong
+        - Something else
+    validations:
+      required: true
+  - type: input
+    id: tool
+    attributes:
+      label: Tool and versions
+      placeholder: "cert-manager (Helm chart) 1.14.4 → 1.16.2"
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: What happened
+      description: What the issue said, and what was really the case. A link to the release note or changelog line helps most.
+    validations:
+      required: true
+  - type: textarea
+    id: setup
+    attributes:
+      label: How it is installed (optional)
+      description: "Argo CD, Flux, helmfile, Terraform, Kustomize… and the values involved, with anything private removed."
+      render: yaml
+  - type: input
+    id: link
+    attributes:
+      label: Link to the Stackat issue (optional)
+      description: Only if the repository is public.

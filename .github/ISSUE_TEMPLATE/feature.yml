@@ -1,0 +1,28 @@
+name: Feature request
+description: A tool Stackat should cover, or something it should do.
+title: "[Request] "
+labels: [feature-request, triage]
+body:
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What kind
+      options:
+        - Cover a tool (Helm chart, Terraform provider…)
+        - Support how we install things (a GitOps tool, a file layout…)
+        - An integration (Slack, Jira, something else)
+        - Something else
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What you would like
+      description: For a tool, its name and where its releases are (chart repository, GitHub repository, Terraform registry).
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why it matters to you
+      description: The problem behind it helps us get it right.
