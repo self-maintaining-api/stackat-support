@@ -3,7 +3,7 @@
 Please don't open a public issue or discussion. Report it privately, either way:
 
 - **GitHub:** [Report a vulnerability](../../security/advisories/new) (private to you and the Stackat team), or
-- **Email:** [security@stackat.dev](mailto:security@stackat.dev).
+- **Email:** [support@stackat.dev](mailto:support@stackat.dev), subject starting with "Security".
 
 Include what you found, how to reproduce it and what it could affect. We confirm receipt within two working days and
 keep you posted until it is fixed. Please give us a reasonable time to fix it before telling anyone else.
