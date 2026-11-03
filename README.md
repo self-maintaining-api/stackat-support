@@ -9,7 +9,7 @@ Questions, problems and ideas about [Stackat](https://stackat.dev) go here. We r
 | Tell us an issue was wrong, or missed a change that broke your upgrade | [New issue → Wrong or missed finding](../../issues/new?template=finding.yml) |
 | Suggest a tool to cover, or a feature | [New issue → Feature request](../../issues/new?template=feature.yml) |
 | Report a security problem | **Not here:** see [SECURITY.md](SECURITY.md) |
-| Anything private: billing, your account, deleting your data | Email [info@progrex.dev](mailto:info@progrex.dev) |
+| Anything private: billing, your account, deleting your data | Email [support@stackat.dev](mailto:support@stackat.dev) |
 
 **This repository is public.** Don't post private repository names, file contents, secrets or anything you would not
 put on the internet. When a report needs those, open the issue without them and say so: we follow up by email.

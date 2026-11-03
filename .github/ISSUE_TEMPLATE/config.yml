@@ -5,9 +5,9 @@ contact_links:
     about: How something works, or whether Stackat fits your setup.
   - name: Report a security problem (privately)
     url: https://github.com/self-maintaining-api/stackat-support/security/advisories/new
-    about: Never in a public issue. Or email info@progrex.dev.
+    about: Never in a public issue. Or email security@stackat.dev.
   - name: Billing, your account or your data
-    url: mailto:info@progrex.dev
+    url: mailto:support@stackat.dev
     about: Anything private goes by email.
   - name: Documentation
     url: https://docs.stackat.dev
