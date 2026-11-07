@@ -1,0 +1,37 @@
+name: Track a tool
+description: A tool Stackat found in your repositories but does not track yet (the dashboard's "Found, not tracked yet").
+title: "[Track] "
+labels: [tool-request, triage]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This repository is public: write only what you are happy for anyone to read. The dashboard fills in the tool, never your organisation, repositories or file paths.
+  - type: input
+    id: tool
+    attributes:
+      label: Tool
+      description: As the dashboard names it, for example `glitchtip/glitchtip` or `hetznercloud/hcloud`.
+    validations:
+      required: true
+  - type: input
+    id: kind
+    attributes:
+      label: Kind
+      description: Container image, Terraform provider or Helm chart.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version you run
+  - type: input
+    id: source
+    attributes:
+      label: Where its releases are (if you know)
+      description: The project's GitHub or GitLab repository, or its changelog.
+  - type: textarea
+    id: why
+    attributes:
+      label: Anything else
+      description: Optional. How you use it, or why tracking it matters to you.
